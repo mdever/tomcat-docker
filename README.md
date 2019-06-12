@@ -2,6 +2,10 @@
 
 This is a reference project for myself for future use. It is a self contained Tomcat project which runs in docker out of the box. It has remote debugging set up which can easily be connected to from Eclipse or Netbeans.
 
+## Prepare
+`mvn install -DskipTests`
+- In order to use in eclipse, run `mvn eclipse:eclipse`
+
 ## Build
 `./build.sh`
 - Runs maven package followed by docker build
