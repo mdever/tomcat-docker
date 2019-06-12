@@ -13,3 +13,5 @@ This is a reference project for myself for future use. It is a self contained To
 ## Debug
 `./debug.sh`
 - Debug on local docker host
+- Logs from docker will map to local logs/ directory in out.log file
+- Tail these logs in eclipse using the [LogViewer](https://marketplace.eclipse.org/content/logviewer) plugin
