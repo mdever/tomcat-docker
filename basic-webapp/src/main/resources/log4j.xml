@@ -27,6 +27,18 @@
       <param name="ConversionPattern" value="%d [%t] %-5p %c %x - %m%n"/>
     </layout>
   </appender>
+  
+  <appender name="file" class="org.apache.log4j.FileAppender">
+  
+   <param name="file" value="/usr/var/logs/basic-webapp/out.log"/>
+   <param name="immediateFlush" value="true"/>
+   <param name="threshold" value="debug"/>
+   <param name="append" value="false"/>
+   
+   <layout class="org.apache.log4j.PatternLayout">
+     <param name="ConversionPattern" value="%d [%t] %-5p %c %x - %m%n"/>
+   </layout>
+  </appender>
 
   <logger name="org.springframework">
     <level value="info"/>
@@ -36,6 +48,7 @@
   <root>
     <priority value ="info" />
     <appender-ref ref="console" />
+    <appender-ref ref="file" />
   </root>
 
 </log4j:configuration>

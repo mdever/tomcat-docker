@@ -21,16 +21,17 @@ package org.apache.tomcat.maven.tomcat.api.impl;
 
 import org.apache.tomcat.maven.tomcat.api.HelloService;
 import org.springframework.stereotype.Service;
+import org.apache.log4j.Logger;
 
-/**
- * @author Olivier Lamy
- */
 @Service( "helloService#default" )
 public class DefaultHelloService
     implements HelloService
 {
+	private static Logger LOGGER = Logger.getLogger(DefaultHelloService.class);
+	
     public String sayHello( String who )
     {
+    	LOGGER.info("DefaultHelloService.sayHello() is being called with argument {}" + who);
         return "Hello " + who + "!";
     }
 }

@@ -28,7 +28,7 @@
 
   <artifactId>basic-api</artifactId>
 
-  <name>test-api</name>
+  <name>basic-api</name>
 
 
   <dependencies>
