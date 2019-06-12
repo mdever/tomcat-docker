@@ -1,0 +1,5 @@
+127.0.0.1 - - [10/Jun/2019:21:37:13 -0400] "GET / HTTP/1.1" 200 1802 http-bio-9090-exec-1 27
+127.0.0.1 - - [10/Jun/2019:21:37:13 -0400] "GET /js/jquery-1.7.js HTTP/1.1" 200 249159 http-bio-9090-exec-2 2
+127.0.0.1 - - [10/Jun/2019:21:37:13 -0400] "GET /css/bootstrap.min.1.4.0.css HTTP/1.1" 200 47646 http-bio-9090-exec-3 1
+127.0.0.1 - - [10/Jun/2019:21:37:13 -0400] "GET /favicon.ico HTTP/1.1" 404 988 http-bio-9090-exec-5 2
+127.0.0.1 - - [10/Jun/2019:21:37:17 -0400] "GET /restServices/testServices/HelloService/sayHello/Mark HTTP/1.1" 200 10 http-bio-9090-exec-4 62
